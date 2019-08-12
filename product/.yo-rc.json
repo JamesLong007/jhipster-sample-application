@@ -1,0 +1,44 @@
+{
+  "generator-jhipster": {
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "enableHibernateCache": true,
+    "enableSwaggerCodegen": false,
+    "enableTranslation": true,
+    "jhiPrefix": "jhi",
+    "languages": [
+      "en",
+      "fr"
+    ],
+    "messageBroker": false,
+    "nativeLanguage": "en",
+    "packageName": "com.jhipster.demo.product",
+    "packageFolder": "com/jhipster/demo/product",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "serviceDiscoveryType": "eureka",
+    "skipClient": true,
+    "testFrameworks": [],
+    "websocket": false,
+    "baseName": "product",
+    "applicationType": "microservice",
+    "authenticationType": "jwt",
+    "cacheProvider": "hazelcast",
+    "buildTool": "gradle",
+    "serverPort": "8081",
+    "skipUserManagement": true,
+    "jhipsterVersion": "6.2.0",
+    "clientPackageManager": "npm",
+    "jwtSecretKey": "YmJlZTFiYjZlYzRkZDljYjUzZDM3MmQ4ZjkyYjBhNzg4N2FhMjAyYmRmOTY5OTQwZWI2MjZjMWY0NTkyZTMxMjcyNjUzNmE1ZGFhOWI3YWI4YTA0ZmI4ZmEyMjQwOTVlMTg0YTM4ZGU1MDE4NTcwMDVmZThmYTU3YTgyYTM0N2Y=",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "blueprints": []
+  },
+  "entities": [
+    "Product",
+    "ProductCategory",
+    "ProductOrder",
+    "OrderItem"
+  ]
+}

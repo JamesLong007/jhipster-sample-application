@@ -2,19 +2,19 @@
   "generator-jhipster": {
     "applicationType": "monolith",
     "gitCompany": "",
-    "baseName": "jhipsterSampleApplication",
-    "packageName": "io.github.jhipster.application",
-    "packageFolder": "io/github/jhipster/application",
-    "serverPort": 8080,
+    "baseName": "blog",
+    "packageName": "com.jhipster.demo.blog",
+    "packageFolder": "com/jhipster/demo/blog",
+    "serverPort": "8080",
     "serviceDiscoveryType": false,
     "authenticationType": "jwt",
     "uaaBaseName": "../uaa",
-    "cacheProvider": "ehcache",
+    "cacheProvider": "hazelcast",
     "enableHibernateCache": true,
     "websocket": false,
     "databaseType": "sql",
-    "devDatabaseType": "h2Memory",
-    "prodDatabaseType": "postgresql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
     "searchEngine": false,
     "enableSwaggerCodegen": false,
     "messageBroker": false,
@@ -22,12 +22,13 @@
     "useSass": true,
     "clientPackageManager": "npm",
     "testFrameworks": [
-      "cucumber"
+      "protractor"
     ],
-    "enableTranslation": false,
+    "enableTranslation": true,
     "nativeLanguage": "en",
     "languages": [
-      "en"
+      "en",
+      "fr"
     ],
     "clientFramework": "react",
     "jhiPrefix": "jhi",
@@ -37,9 +38,18 @@
     "entitySuffix": "",
     "dtoSuffix": "DTO",
     "otherModules": [],
-    "blueprints": []
+    "blueprints": [],
+    "skipClient": false,
+    "skipServer": false,
+    "skipUserManagement": false,
+    "clientThemeVariant": ""
   },
   "git-provider": "GitHub",
   "git-company": "JamesLong007",
-  "repository-name": "jhipster-sample-application"
+  "repository-name": "jhipster-sample-application",
+  "entities": [
+    "Blog",
+    "BlogEntry",
+    "Tag"
+  ]
 }
